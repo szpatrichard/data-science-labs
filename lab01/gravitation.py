@@ -11,9 +11,8 @@ class Object:
     """Object class."""
     def __init__(self, mass):
         try:
-            if (isinstance(mass, int) or isinstance(mass, float)):
-                if mass > 0:
-                    self.mass = mass
+            if isinstance(mass, (float, int)) and mass > 0:
+                self.mass = mass
         except ValueError as err:
             print(err)
 
@@ -114,5 +113,5 @@ if __name__ == "__main__":
         distance = obj[2]
 
         # gravitational pull between objects
-        force = obj1.calc_force(obj2, distance)
-        print_force(force)
+        f = obj1.calc_force(obj2, distance)
+        print_force(f)

@@ -9,7 +9,7 @@ class Circle:
     """Circle class."""
     def __init__(self, r = float):
         try:
-            if (isinstance(r, float) or isinstance(r, int)) and r > 0:
+            if isinstance(r, (float, int)) and r > 0:
                 self.radius = r
         except TypeError as err:
             print(err)
