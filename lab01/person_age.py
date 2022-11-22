@@ -97,7 +97,9 @@ def print_conversion_result(person):
     print(f"{name} is {days_age} days old.")
 
 if __name__ == "__main__":
+    # person details
     person_name = str_input("Enter name: ")
     person_age = pos_int_input("Age: ")
+    # instantiate a new person object
     person = Person(person_name, person_age)
     print_conversion_result(person)

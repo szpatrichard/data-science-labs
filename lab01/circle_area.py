@@ -64,6 +64,8 @@ def print_area(circle):
     print(f"Area: {area:.2f}")
 
 if __name__ == "__main__":
+    # radius of circle
     radius = radius_input()
+    # instantiate a new circle object
     c = Circle(radius)
     print_area(c)

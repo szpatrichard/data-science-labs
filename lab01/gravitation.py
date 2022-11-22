@@ -104,10 +104,15 @@ if __name__ == "__main__":
     objects = list()
     objects.append(add_distance())
 
+    # loop over the objects in the objects list
     for obj in objects:
+        # first object
         obj1 = obj[0]
+        # second object
         obj2 = obj[1]
+        # distance between the objects
         distance = obj[2]
 
+        # gravitational pull between objects
         force = obj1.calc_force(obj2, distance)
         print_force(force)

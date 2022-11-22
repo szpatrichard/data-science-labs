@@ -64,7 +64,9 @@ def print_bmi(index = float):
     print(f"BMI: {index:.2f}")
 
 if __name__ == "__main__":
+    # base parameters
     WEIGHT = weight_input()
     HEIGHT = height_input()
+    # body mass index calculation
     bmi = calc_bmi(WEIGHT, HEIGHT)
     print_bmi(bmi)

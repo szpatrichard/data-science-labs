@@ -101,11 +101,15 @@ def print_summary(categories_list):
     print(f"Total income: \u20ac {total_income:.2f}")
 
 if __name__ == "__main__":
+    # create tickets
     CLASS_A = Ticket("A", CategoryPrice.CLASS_A)
     CLASS_B = Ticket("B", CategoryPrice.CLASS_B)
     CLASS_C = Ticket("C", CategoryPrice.CLASS_C)
 
+    # group ticket categories
     categories = [CLASS_A, CLASS_B, CLASS_C]
 
+    # tickets sold per each category
     sold_tickets_input(categories)
+    
     print_summary(categories)

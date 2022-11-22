@@ -43,6 +43,7 @@ if __name__ == "__main__":
             dist_in_km = float(dist_in_km)
             # convert negative value into positive value
             dist_in_km = dist_in_km if dist_in_km > 0 else dist_in_km + dist_in_km * -2
+            # conversion result to miles
             dist_in_miles = convert_km_to_mi(dist_in_km)
             print_distance(dist_in_miles)
         except ValueError as err:

@@ -63,7 +63,11 @@ def print_summary(names = list, average = float):
     print(f"{fname} {sname}'s average: {average:.2f}%")
 
 if __name__ == "__main__":
+    # names
     firstname, surname = names_input()
+    # grades
     grades = grades_input()
+    # average grade
     average_grade = calc_average(grades)
+    # summary
     print_summary([firstname, surname], average_grade)
